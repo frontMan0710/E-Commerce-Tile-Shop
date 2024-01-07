@@ -1,3 +1,19 @@
+$(window).scroll(function () {
+    var secondBox = $('.second');
+    var offset = secondBox.offset().top;
+    if ($(window).width() > 1023) {
+        if ($(window).scrollTop() + $(window).height() > offset) {
+            $("#menuContent").slideUp(500);
+            $("header").css("height","auto")
+            $(".headerLogo .logo").css({"transform":"translateY(-25%)", "transition":"transform 1s"})
+        } else {
+            $("#menuContent").slideDown(400);
+            $(".headerLogo .logo").css({"transform":"translateY(0%)", "transition":"transform 0.8s"})
+        }
+    } else {
+        $("#menuContent").hide();
+    }
+})
 $(function () {
     if($(window).width() <= 1023) {
         $(".profileAction ul li img").each(function () {

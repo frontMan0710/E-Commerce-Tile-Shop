@@ -40,6 +40,7 @@ ul li:hover {
 .contentBorder {
     width: 1422px;
     margin: 0 auto;
+    height: 100%;
 }
 section .contentBorder {
     padding: 40px 0 40px 0;
@@ -84,7 +85,7 @@ header #menuContent .searchForm input {
     font-size: 1rem;
 }
 .tech_textBlock {
-    max-width: 726px;
+    max-width: 716px;
     max-height: 402px;
 }
 .tech_secTitleBlock {

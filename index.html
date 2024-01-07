@@ -7,6 +7,7 @@
     <title>E-Commerce Tile Shop</title>
     <link rel="icon" type="image/x-icon" href="./images/min/flet.ico">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./libs/swiper/unpkg.com_swiper@8.4.7_swiper-bundle.min.css">
 </head>
 <body>
 <header>
@@ -51,7 +52,7 @@
 </header>
 <main>
     <section class="start">
-        <div class="contentBorder start__content">
+        <div class="contentBorder startContent">
             <div class="tech_textBlock startTextCard">
                 <div class="startTextCard__textBlock">
                     <h1>New Generation Ceramic Tile</h1>
@@ -74,16 +75,68 @@
                     been the industry's standard dummy text.</p>
             </div>
             <div class="swiper firstSlider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"></div>
-                    <div class="swiper-slide"></div>
-                    <div class="swiper-slide"></div>
+                <div class="swiper-wrapper tech_cards sliderWrapper">
+                    <div class="swiper-slide tech_cards__card firstSliderCard" id="fslide">
+                        <div class="tech_cards__cardImage firstGalleryImage">
+                            <img src="./images/firstGallery1.jpg">
+                            <div class="galleryTextBlock">
+                                <h3>Bathroom Tiles</h3>
+                                <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech_cards__card firstSliderCard">
+                        <div class="tech_cards__cardImage firstGalleryImage">
+                            <img src="./images/firstGallery2.jpg">
+                            <div class="galleryTextBlock">
+                                <h3>Marble</h3>
+                                <p>Ante mus blandit sapien sociosqu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech_cards__card firstSliderCard">
+                        <div class="tech_cards__cardImage firstGalleryImage">
+                            <img src="./images/firstGallery3.jpg">
+                            <div class="galleryTextBlock">
+                                <h3>Outdoor Flooring</h3>
+                                <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                            </div>
+                        </div>
+                        <div class="tech_cards__cardImage firstGalleryImage">
+                            <img src="./images/firstGallery4.jpg">
+                            <div class="galleryTextBlock">
+                                <h3>Kitchen Interior</h3>
+                                <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <section class="second">
+        <div class="contentBorder secondContent">
+            <div class="tech_textBlock secondTextCard">
+                <div class="secondTextCard__textBlock">
+                    <h1>Vision</h1>
+                    <p>
+                        Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend <br>
+                        aptent dapibus metus maecenas consequat. Elementum interdum a <br>
+                        semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra<br>
+                        sagittis sit aliquet at. Magna nam platea justo.
+                    </p>
+                    <a href="javascript:void(0)" class="tech_ancButton">LEARN MORE</a>
                 </div>
             </div>
         </div>
     </section>
-    <section></section>
-    <section></section>
+    <section class="third">
+        <div class="contentBorder thirdContent">
+
+        </div>
+    </section>
     <section></section>
     <section></section>
 </main>
@@ -94,5 +147,7 @@
 <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
 <script src="./jQuery/header.js"></script>
 <script src="./jQuery/main.js"></script>
+<script src="./libs/swiper/unpkg.com_swiper@8.4.7_swiper-bundle.min.js"></script>
+<script defer src="./jQuery/slider.js"></script>
 </body>
 </html>
