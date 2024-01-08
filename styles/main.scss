@@ -1,4 +1,35 @@
 @media screen and (min-width: 1440px) {
+  .firstTitle, .fourthTitle, .fifthTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    max-height: 159px;
+    height: 14.53vw;
+    h2 {
+      position: relative;
+      max-height: 73px;
+      height: 3.8vw;
+      &::after {
+        content: "";
+        background-color: var(--color-grey);
+        position: absolute;
+        max-width: 150px;
+        max-height: 5px;
+        width: 7.8vw;
+        height: 0.26vw;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5px;
+      }
+    }
+  }
+  .fourthButton, .fifthButton {
+    display: flex;
+    justify-content: center;
+  }
   main {
     display: flex;
     flex-direction: column;
@@ -42,47 +73,12 @@
               font-weight: 100;
               font-size: 1.04vw;
             }
-            a {
-              background-color: var(--color-white);
-              color: var(--color-black);
-              &:hover {
-                background-color: var(--color-black);
-                color: var(--color-white);
-              }
-            }
           }
         }
       }
     }
     .first {
       .firstContent {
-        .firstTitle {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          flex-direction: column;
-          width: 100%;
-          max-height: 159px;
-          height: 14.53vw;
-          h2 {
-            position: relative;
-            max-height: 73px;
-            height: 3.8vw;
-            &::after {
-              content: "";
-              background-color: var(--color-grey);
-              position: absolute;
-              max-width: 150px;
-              max-height: 5px;
-              width: 7.8vw;
-              height: 0.26vw;
-              bottom: 0;
-              left: 50%;
-              transform: translateX(-50%);
-              border-radius: 5px;
-            }
-          }
-        }
         .firstSlider {
           width: 100%;
           max-height: 698px;
@@ -201,30 +197,236 @@
               font-weight: 100;
               font-size: 1.04vw;
             }
-            a {
-              background-color: var(--color-black-mixin);
-              color: var(--color-white);
-              &:hover {
-                background-color: var(--color-grey);
-                color: var(--color-white);
+          }
+        }
+      }
+    }
+    .third {
+      max-height: 806px;
+      height: 41.97vw;
+      .thirdContent {
+        display: flex;
+        .thirdContent__content {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          max-width: 968px;
+          width: 50.41vw;
+          height: 100%;
+          .thirdTextBlock, .thirdSlider, .thirdButton {
+            width: 100%;
+          }
+          .thirdTextBlock {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            text-align: left;
+            flex-direction: column;
+            max-height: 259px;
+            height: 13.48vw;
+            h1 {
+              font-size: 2.4vw;
+            }
+            p {
+              font-weight: 100;
+              font-size: 1.04vw;
+            }
+          }
+          .thirdSlider {
+            max-height: 325px;
+            height: 16.92vw;
+            .thirdSliderWrapper {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              max-width: 903px;
+              width: 47.03vw;
+              height: 100%;
+              .thirdSliderSlide {
+                height: 100%;
+                img {
+                  max-height: 100%;
+                }
+              }
+            }
+          }
+          .thirdButton {
+            max-height: 52px;
+          }
+        }
+        .thirdContent__video {
+          max-width: 454px;
+          width: 23.64vw;
+          height: 100%;
+          .playerWrapper {
+            background-image: url("../images/playerPreview.jpg");
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .playerWrapperTextBlock {
+              background-color: var(--color-white);
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              position: absolute;
+              gap: 1.04vw;
+              max-width: 226px;
+              width: 11.77vw;
+              max-height: 110px;
+              height: 5.72vw;
+              padding: 0 1.56vw 0 1.56vw;
+              bottom: 0;
+              right: 0;
+              .playerIconWrapper {
+                max-height: 60px;
+                max-width: 60px;
+                width: 3.12vw;
+                height: 3.12vw;
+                #playerIcon {
+                  background-color: var(--color-black-mixin);
+                  position: relative;
+                  cursor: pointer;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 100%;
+                  img {
+                    position: absolute;
+                    max-height: 19.89px;
+                    max-width: 18px;
+                    width: 0.93vw;
+                    height: 1vw;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-40%, -50%);
+                  }
+                  &:hover {
+                    background-color: var(--color-grey);
+                  }
+                }
+              }
+              .textContent {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                max-height: 42px;
+                max-width: 86px;
+                width: 4.47vw;
+                height: 2.18vw;
+                span {
+                  line-height: 1;
+                  font-weight: 600;
+                  font-size: 0.93vw;
+                }
+                span:first-of-type {
+                  color: var(--color-grey);
+                }
+                span:last-of-type {
+                  color: var(--color-black-mixin);
+                }
+              }
+            }
+
+          }
+          #videoPlayerModal {
+            max-width: 1120px;
+            max-height: 630px;
+            width: 58.3vw;
+            height: 32.8vw;
+          }
+        }
+      }
+    }
+    .fourth {
+      max-height: 803px;
+      height: 41.82vw;
+      .fourthContent {
+        .fourthSlider {
+          max-height: 502px;
+          height: 26.14vw;
+          width: 100%;
+          padding: 40px 0 40px;
+          .fourthSliderWrapper {
+            display: flex;
+            justify-content: space-between;
+            .fourthSlide {
+              max-width: 333px;
+              max-height: 422px;
+              width: 17.34vw;
+              height: 21.97vw;
+              .fourthSlideImage {
+                img {
+                  max-height: 100%;
+                  max-width: 100%;
+                }
+              }
+              .fourthSlideTextBlock {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                gap: 3px;
+                max-height: 91px;
+                height: 4.73vw;
+                h3 {
+                  font-size: 1.35vw;
+                }
+                p {
+                  font-size: 0.83vw;
+                }
               }
             }
           }
         }
       }
     }
-    .third {
-      max-height: 706px;
-      height: 36.77vw;
-      .thirdContent {
-
-      }
-    }
-    .fourth {
-
-    }
     .fifth {
-
+      max-height: 1271px;
+      height: 66.19vw;
+      .fifthContent {
+        .fifthCatalogue {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          padding: 2.08vw 0 2.6vw 0;
+          max-height: 1050px;
+          height: 54.68vw;
+          .fifthCatalogueCard {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .fifthCatalogueImage {
+              img {
+                max-height: 100%;
+                max-width: 100%;
+                cursor: pointer;
+              }
+            }
+            &:hover {
+              transform: scale(1.1);
+            }
+            .fifthCatalogueTextBlock {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              cursor: pointer;
+              gap: 18px;
+              max-height: 112px;
+              height: 5.83vw;
+              h3 {
+                font-size: 1.35vw;
+              }
+              p {
+                text-align: right;
+                max-width: 161px;
+                width: 8.38vw;
+                font-size: 0.93vw;
+              }
+            }
+          }
+        }
+      }
     }
     .sixth {
 

@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./images/min/flet.ico">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./libs/swiper/unpkg.com_swiper@8.4.7_swiper-bundle.min.css">
+    <link rel="stylesheet" href="./libs/modal/magnific-popup.css">
 </head>
 <body>
 <header>
@@ -127,17 +128,203 @@
                         semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra<br>
                         sagittis sit aliquet at. Magna nam platea justo.
                     </p>
-                    <a href="javascript:void(0)" class="tech_ancButton">LEARN MORE</a>
+                    <a href="javascript:void(0)" class="tech_ancButton tech_darkButton">LEARN MORE</a>
                 </div>
             </div>
         </div>
     </section>
     <section class="third">
         <div class="contentBorder thirdContent">
-
+            <div class="thirdContent__content">
+                <div class="thirdTextBlock">
+                    <h1>Creative Solutions <br> by Professional Designers</h1>
+                    <p>
+                        Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend <br>
+                        aptent dapibus metus maecenas consequat. Elementum interdum a <br>
+                        semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra <br>
+                        sagittis sit aliquet at. Magna nam platea justo.
+                    </p>
+                </div>
+                <div class="thirdSlider">
+                    <div class="thirdSliderWrapper">
+                        <div class="thirdSliderSlide">
+                            <img src="./images/thirdgallery1.jpg">
+                        </div>
+                        <div class="thirdSliderSlide">
+                            <img src="./images/thirdgallery2.jpg">
+                        </div>
+                        <div class="thirdSliderSlide">
+                            <img src="./images/thirdgallery3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="thirdButton">
+                    <a href="javascript:void(0)" class="tech_ancButton tech_darkButton">READ MORE</a>
+                </div>
+            </div>
+            <div class="thirdContent__video">
+                <div class="playerWrapper">
+                    <div class="playerWrapperTextBlock">
+                        <div class="playerIconWrapper">
+                            <div id="playerIcon">
+                                <img src="./images/playerPlay.svg">
+                            </div>
+                        </div>
+                        <div class="textContent">
+                            <span>Watch</span>
+                            <span>Video-tour</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="videoPlayerModal" class="mfp-hide">
+                    <iframe width="1120" height="630"
+                            title="YouTube video player" frameborder="0"
+                            src="https://www.youtube.com/embed/DDrn3KUZgas?si=PLDA3o-qts3MViH4"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </div>
     </section>
-    <section></section>
+    <section class="fourth">
+        <div class="contentBorder fourthContent">
+            <div class="tech_secTitleBlock fourthTitle">
+                <h2>Projects</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
+                    been the industry's standard dummy text.</p>
+            </div>
+            <div class="fourthSlider">
+                <div class="fourthSliderWrapper">
+                    <div class="fourthSlide">
+                        <div class="fourthSlideImage">
+                            <img src="./images/fourthSlide1.jpg">
+                        </div>
+                        <div class="fourthSlideTextBlock">
+                            <h3>Kingdom Tower</h3>
+                            <p>Marble Flooring</p>
+                        </div>
+                    </div>
+                    <div class="fourthSlide">
+                        <div class="fourthSlideImage">
+                            <img src="./images/fourthSlide2.jpg">
+                        </div>
+                        <div class="fourthSlideTextBlock">
+                            <h3>Dubai Mall</h3>
+                            <p>Wood Flooring</p>
+                        </div>
+                    </div>
+                    <div class="fourthSlide">
+                        <div class="fourthSlideImage">
+                            <img src="./images/fourthSlide3.jpg">
+                        </div>
+                        <div class="fourthSlideTextBlock">
+                            <h3>King Road Offices</h3>
+                            <p>Outdoor Flooring</p>
+                        </div>
+                    </div>
+                    <div class="fourthSlide">
+                        <div class="fourthSlideImage">
+                            <img src="./images/fourthSlide4.jpg">
+                        </div>
+                        <div class="fourthSlideTextBlock">
+                            <h3>Beach Tower Alupang</h3>
+                            <p>Wood Flooring</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fourthButton">
+                <a href="javascript:void(0)" class="tech_ancButton tech_darkButton">VIEW ALL</a>
+            </div>
+        </div>
+    </section>
+    <section class="fifth">
+        <div class="contentBorder fifthContent">
+            <div class="tech_secTitleBlock fifthTitle">
+                <h2>The Collections</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
+                    been the industry's standard dummy text.</p>
+            </div>
+            <div class="fifthCatalogue">
+                <div class="fifthCatalogueCard">
+                    <div class="fifthCatalogueImage">
+                        <img src="./images/prod1.jpg">
+                    </div>
+                    <div class="fifthCatalogueTextBlock">
+                        <h3>Zurich Vision 60×60</h3>
+                        <p>237.99 SAR</p>
+                    </div>
+                </div>
+                <div class="fifthCatalogueCard">
+                    <div class="fifthCatalogueImage">
+                        <img src="./images/prod2.jpg">
+                    </div>
+                    <div class="fifthCatalogueTextBlock">
+                        <h3>Zurich Pearl 60×60</h3>
+                        <p>312.49 SAR</p>
+                    </div>
+                </div>
+                <div class="fifthCatalogueCard">
+                    <div class="fifthCatalogueImage">
+                        <img src="./images/prod3.jpg">
+                    </div>
+                    <div class="fifthCatalogueTextBlock">
+                        <h3>Zurich Grey 60×60</h3>
+                        <p>312.49 SAR</p>
+                    </div>
+                </div>
+                <div class="fifthCatalogueCard">
+                    <div class="fifthCatalogueImage">
+                        <img src="./images/prod4.jpg">
+                    </div>
+                    <div class="fifthCatalogueTextBlock">
+                        <h3>Zurich Dark Grey 60×60</h3>
+                        <p>312.49 SAR</p>
+                    </div>
+                </div>
+                <div class="fifthCatalogueCard">
+                    <div class="fifthCatalogueImage">
+                        <img src="./images/prod5.jpg">
+                    </div>
+                    <div class="fifthCatalogueTextBlock">
+                        <h3>Windsor White Oak</h3>
+                        <p>312.49 SAR</p>
+                    </div>
+                </div>
+                <div class="fifthCatalogueCard">
+                    <div class="fifthCatalogueImage">
+                        <img src="./images/prod6.jpg">
+                    </div>
+                    <div class="fifthCatalogueTextBlock">
+                        <h3>Sicily Grey Décor 30×60</h3>
+                        <p>312.49 SAR</p>
+                    </div>
+                </div>
+                <div class="fifthCatalogueCard">
+                    <div class="fifthCatalogueImage">
+                        <img src="./images/prod7.jpg">
+                    </div>
+                    <div class="fifthCatalogueTextBlock">
+                        <h3>Sardinia White</h3>
+                        <p>312.49 SAR</p>
+                    </div>
+                </div>
+                <div class="fifthCatalogueCard">
+                    <div class="fifthCatalogueImage">
+                        <img src="./images/prod8.jpg">
+                    </div>
+                    <div class="fifthCatalogueTextBlock">
+                        <h3>Sicily Grey 30×60</h3>
+                        <p>312.49 SAR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fifthButton">
+                <a href="javascript:void(0)" class="tech_ancButton tech_darkButton">MORE PRODUCTS</a>
+            </div>
+        </div>
+    </section>
     <section></section>
 </main>
 <footer>
@@ -147,7 +334,9 @@
 <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
 <script src="./jQuery/header.js"></script>
 <script src="./jQuery/main.js"></script>
-<script src="./libs/swiper/unpkg.com_swiper@8.4.7_swiper-bundle.min.js"></script>
+<script async src="./libs/swiper/unpkg.com_swiper@8.4.7_swiper-bundle.min.js"></script>
 <script defer src="./jQuery/slider.js"></script>
+<script async src="./libs/modal/jquery.magnific-popup.min.js"></script>
+<script defer src="./jQuery/popup.js"></script>
 </body>
 </html>

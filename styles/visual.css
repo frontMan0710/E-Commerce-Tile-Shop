@@ -5,6 +5,11 @@
 }
 @font-face {
     font-family: "Proxima Nova";
+    src: url("../styles/fonts/ProximaNova-Semibold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Proxima Nova";
     src: url("../styles/fonts/ProximaNova-Regular.ttf");
     font-weight: normal;
 }
@@ -52,19 +57,27 @@ section .contentBorder {
 .icon:hover {
     transform: scale(1.2);
 }
+.tech_darkButton {
+    background-color: var(--color-black-mixin);
+    color: var(--color-white);
+}
 .tech_darkButton:hover {
     background-color: var(--color-grey);
     color: var(--color-white);
 }
-/*.tech_lightButton:hover {
-    background-color: var(--color-black);
+.tech_lightButton {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+.tech_lightButton:hover {
+    background-color: var(--color-black-mixin);
     color: var(--color-white);
-}*/
+}
 .tech_ancButton {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
+    font-weight: 600;
     max-width: 180px;
     max-height: 52px;
 }
@@ -90,7 +103,6 @@ header #menuContent .searchForm input {
 }
 .tech_secTitleBlock {
     text-align: center;
-    line-height: 28px;
 }
 @media screen and (max-width: 1920px) and (min-width: 1024px) {
     .contentBorder {
