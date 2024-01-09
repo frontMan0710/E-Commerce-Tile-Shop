@@ -7,6 +7,7 @@
     <title>E-Commerce Tile Shop</title>
     <link rel="icon" type="image/x-icon" href="./images/min/flet.ico">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./libs/animations/animate.min.css">
     <link rel="stylesheet" href="./libs/swiper/unpkg.com_swiper@8.4.7_swiper-bundle.min.css">
     <link rel="stylesheet" href="./libs/modal/magnific-popup.css">
 </head>
@@ -55,9 +56,9 @@
     <section class="start">
         <div class="contentBorder startContent">
             <div class="tech_textBlock startTextCard">
-                <div class="startTextCard__textBlock">
+                <div class="startTextCard__textBlock animate__animated animate__fadeInRight">
                     <h1>New Generation Ceramic Tile</h1>
-                    <p>
+                    <p class="tech_parTwenty">
                         Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend <br>
                         aptent dapibus metus maecenas consequat. Elementum interdum a <br>
                         semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra <br>
@@ -71,43 +72,45 @@
     <section class="first">
         <div class="contentBorder firstContent">
             <div class="tech_secTitleBlock firstTitle">
-                <h2>Products</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
-                    been the industry's standard dummy text.</p>
+                <h2 class="animate__animated wow animate__fadeInLeft">Products</h2>
+                <p class="tech_parTwenty animate__animated wow animate__fadeInLeft">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
+                    been the industry's standard dummy text.
+                </p>
             </div>
             <div class="swiper firstSlider">
                 <div class="swiper-wrapper tech_cards sliderWrapper">
-                    <div class="swiper-slide tech_cards__card firstSliderCard" id="fslide">
+                    <div class="swiper-slide wow tech_cards__card firstSliderCard">
                         <div class="tech_cards__cardImage firstGalleryImage">
                             <img src="./images/firstGallery1.jpg">
                             <div class="galleryTextBlock">
-                                <h3>Bathroom Tiles</h3>
-                                <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                                <h3 class="tech_h3Twenty">Bathroom Tiles</h3>
+                                <p class="tech_parTwenty">Ante mus blandit sapien sociosqu per consequat ad.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide tech_cards__card firstSliderCard">
+                    <div class="swiper-slide wow tech_cards__card firstSliderCard">
                         <div class="tech_cards__cardImage firstGalleryImage">
                             <img src="./images/firstGallery2.jpg">
                             <div class="galleryTextBlock">
-                                <h3>Marble</h3>
-                                <p>Ante mus blandit sapien sociosqu</p>
+                                <h3 class="tech_h3Twenty">Marble</h3>
+                                <p class="tech_parTwenty">Ante mus blandit sapien sociosqu</p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide tech_cards__card firstSliderCard">
+                    <div class="swiper-slide wow tech_cards__card firstSliderCard">
                         <div class="tech_cards__cardImage firstGalleryImage">
                             <img src="./images/firstGallery3.jpg">
                             <div class="galleryTextBlock">
-                                <h3>Outdoor Flooring</h3>
-                                <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                                <h3 class="tech_h3Twenty">Outdoor Flooring</h3>
+                                <p class="tech_parTwenty">Ante mus blandit sapien sociosqu per consequat ad.</p>
                             </div>
                         </div>
                         <div class="tech_cards__cardImage firstGalleryImage">
                             <img src="./images/firstGallery4.jpg">
                             <div class="galleryTextBlock">
-                                <h3>Kitchen Interior</h3>
-                                <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                                <h3 class="tech_h3Twenty">Kitchen Interior</h3>
+                                <p class="tech_parTwenty">Ante mus blandit sapien sociosqu per consequat ad.</p>
                             </div>
                         </div>
                     </div>
@@ -121,14 +124,14 @@
         <div class="contentBorder secondContent">
             <div class="tech_textBlock secondTextCard">
                 <div class="secondTextCard__textBlock">
-                    <h1>Vision</h1>
-                    <p>
+                    <h1 class="animate__animated wow animate__fadeInUp">Vision</h1>
+                    <p class="tech_parTwenty animate__animated wow animate__fadeInLeftBig">
                         Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend <br>
                         aptent dapibus metus maecenas consequat. Elementum interdum a <br>
                         semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra<br>
                         sagittis sit aliquet at. Magna nam platea justo.
                     </p>
-                    <a href="javascript:void(0)" class="tech_ancButton tech_darkButton">LEARN MORE</a>
+                    <a href="javascript:void(0)" class="tech_ancButton tech_darkButton animate__animated wow animate__fadeInLeft">LEARN MORE</a>
                 </div>
             </div>
         </div>
@@ -136,35 +139,36 @@
     <section class="third">
         <div class="contentBorder thirdContent">
             <div class="thirdContent__content">
-                <div class="thirdTextBlock">
-                    <h1>Creative Solutions <br> by Professional Designers</h1>
-                    <p>
+                <div class="thirdContent__textBlock">
+                    <h1 class="animate__animated wow animate__fadeInLeft">Creative Solutions <br> by Professional Designers</h1>
+                    <p class="tech_parTwenty animate__animated wow animate__fadeInLeftBig">
                         Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend <br>
                         aptent dapibus metus maecenas consequat. Elementum interdum a <br>
                         semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra <br>
                         sagittis sit aliquet at. Magna nam platea justo.
                     </p>
                 </div>
-                <div class="thirdSlider">
-                    <div class="thirdSliderWrapper">
-                        <div class="thirdSliderSlide">
+                <div class="thirdSlider swiper">
+                    <div class="thirdSliderWrapper swiper-wrapper">
+                        <div class="thirdSliderSlide swiper-slide wow">
                             <img src="./images/thirdgallery1.jpg">
                         </div>
-                        <div class="thirdSliderSlide">
+                        <div class="thirdSliderSlide swiper-slide wow">
                             <img src="./images/thirdgallery2.jpg">
                         </div>
-                        <div class="thirdSliderSlide">
+                        <div class="thirdSliderSlide swiper-slide wow">
                             <img src="./images/thirdgallery3.jpg">
                         </div>
                     </div>
                 </div>
                 <div class="thirdButton">
-                    <a href="javascript:void(0)" class="tech_ancButton tech_darkButton">READ MORE</a>
+                    <a href="javascript:void(0)" class="tech_ancButton tech_darkButton animate__animated wow animate__fadeInDown">READ MORE</a>
                 </div>
             </div>
             <div class="thirdContent__video">
                 <div class="playerWrapper">
-                    <div class="playerWrapperTextBlock">
+                    <span id="hoverLayer"></span>
+                    <div class="playerWrapperTextBlock animate__animated wow animate__fadeInRight">
                         <div class="playerIconWrapper">
                             <div id="playerIcon">
                                 <img src="./images/playerPlay.svg">
@@ -190,61 +194,65 @@
     <section class="fourth">
         <div class="contentBorder fourthContent">
             <div class="tech_secTitleBlock fourthTitle">
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
-                    been the industry's standard dummy text.</p>
+                <h2 class="animate__animated wow animate__fadeInUp">Projects</h2>
+                <p class="tech_parTwenty animate__animated wow animate__fadeInLeft">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
+                    been the industry's standard dummy text.
+                </p>
             </div>
-            <div class="fourthSlider">
-                <div class="fourthSliderWrapper">
-                    <div class="fourthSlide">
+            <div class="fourthSlider swiper">
+                <div class="fourthSliderWrapper swiper-wrapper">
+                    <div class="fourthSlide swiper-slide wow">
                         <div class="fourthSlideImage">
                             <img src="./images/fourthSlide1.jpg">
                         </div>
                         <div class="fourthSlideTextBlock">
-                            <h3>Kingdom Tower</h3>
+                            <h3 class="tech_h3Twenty">Kingdom Tower</h3>
                             <p>Marble Flooring</p>
                         </div>
                     </div>
-                    <div class="fourthSlide">
+                    <div class="fourthSlide swiper-slide wow">
                         <div class="fourthSlideImage">
                             <img src="./images/fourthSlide2.jpg">
                         </div>
                         <div class="fourthSlideTextBlock">
-                            <h3>Dubai Mall</h3>
+                            <h3 class="tech_h3Twenty">Dubai Mall</h3>
                             <p>Wood Flooring</p>
                         </div>
                     </div>
-                    <div class="fourthSlide">
+                    <div class="fourthSlide swiper-slide wow">
                         <div class="fourthSlideImage">
                             <img src="./images/fourthSlide3.jpg">
                         </div>
                         <div class="fourthSlideTextBlock">
-                            <h3>King Road Offices</h3>
+                            <h3 class="tech_h3Twenty">King Road Offices</h3>
                             <p>Outdoor Flooring</p>
                         </div>
                     </div>
-                    <div class="fourthSlide">
+                    <div class="fourthSlide swiper-slide wow">
                         <div class="fourthSlideImage">
                             <img src="./images/fourthSlide4.jpg">
                         </div>
                         <div class="fourthSlideTextBlock">
-                            <h3>Beach Tower Alupang</h3>
+                            <h3 class="tech_h3Twenty">Beach Tower Alupang</h3>
                             <p>Wood Flooring</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fourthButton">
-                <a href="javascript:void(0)" class="tech_ancButton tech_darkButton">VIEW ALL</a>
+                <a href="javascript:void(0)" class="tech_ancButton tech_darkButton animate__animated wow animate__fadeInDown">VIEW ALL</a>
             </div>
         </div>
     </section>
     <section class="fifth">
         <div class="contentBorder fifthContent">
             <div class="tech_secTitleBlock fifthTitle">
-                <h2>The Collections</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
-                    been the industry's standard dummy text.</p>
+                <h2 class="animate__animated wow animate__fadeInRight">The Collections</h2>
+                <p class="tech_parTwenty animate__animated wow animate__fadeInDown">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
+                    been the industry's standard dummy text.
+                </p>
             </div>
             <div class="fifthCatalogue">
                 <div class="fifthCatalogueCard">
@@ -252,7 +260,7 @@
                         <img src="./images/prod1.jpg">
                     </div>
                     <div class="fifthCatalogueTextBlock">
-                        <h3>Zurich Vision 60×60</h3>
+                        <h3 class="tech_h3Twenty">Zurich Vision 60×60</h3>
                         <p>237.99 SAR</p>
                     </div>
                 </div>
@@ -261,7 +269,7 @@
                         <img src="./images/prod2.jpg">
                     </div>
                     <div class="fifthCatalogueTextBlock">
-                        <h3>Zurich Pearl 60×60</h3>
+                        <h3 class="tech_h3Twenty">Zurich Pearl 60×60</h3>
                         <p>312.49 SAR</p>
                     </div>
                 </div>
@@ -270,7 +278,7 @@
                         <img src="./images/prod3.jpg">
                     </div>
                     <div class="fifthCatalogueTextBlock">
-                        <h3>Zurich Grey 60×60</h3>
+                        <h3 class="tech_h3Twenty">Zurich Grey 60×60</h3>
                         <p>312.49 SAR</p>
                     </div>
                 </div>
@@ -279,7 +287,7 @@
                         <img src="./images/prod4.jpg">
                     </div>
                     <div class="fifthCatalogueTextBlock">
-                        <h3>Zurich Dark Grey 60×60</h3>
+                        <h3 class="tech_h3Twenty">Zurich Dark Grey 60×60</h3>
                         <p>312.49 SAR</p>
                     </div>
                 </div>
@@ -288,7 +296,7 @@
                         <img src="./images/prod5.jpg">
                     </div>
                     <div class="fifthCatalogueTextBlock">
-                        <h3>Windsor White Oak</h3>
+                        <h3 class="tech_h3Twenty">Windsor White Oak</h3>
                         <p>312.49 SAR</p>
                     </div>
                 </div>
@@ -297,7 +305,7 @@
                         <img src="./images/prod6.jpg">
                     </div>
                     <div class="fifthCatalogueTextBlock">
-                        <h3>Sicily Grey Décor 30×60</h3>
+                        <h3 class="tech_h3Twenty">Sicily Grey Décor 30×60</h3>
                         <p>312.49 SAR</p>
                     </div>
                 </div>
@@ -306,7 +314,7 @@
                         <img src="./images/prod7.jpg">
                     </div>
                     <div class="fifthCatalogueTextBlock">
-                        <h3>Sardinia White</h3>
+                        <h3 class="tech_h3Twenty">Sardinia White</h3>
                         <p>312.49 SAR</p>
                     </div>
                 </div>
@@ -315,20 +323,88 @@
                         <img src="./images/prod8.jpg">
                     </div>
                     <div class="fifthCatalogueTextBlock">
-                        <h3>Sicily Grey 30×60</h3>
+                        <h3 class="tech_h3Twenty">Sicily Grey 30×60</h3>
                         <p>312.49 SAR</p>
                     </div>
                 </div>
             </div>
             <div class="fifthButton">
-                <a href="javascript:void(0)" class="tech_ancButton tech_darkButton">MORE PRODUCTS</a>
+                <a href="javascript:void(0)" class="tech_ancButton tech_darkButton animate__animated wow animate__fadeInUp">MORE PRODUCTS</a>
             </div>
         </div>
     </section>
-    <section></section>
+    <section class="sixth">
+        <div class="contentBorder sixthContent">
+            <div class="tech_textBlock sixthTextCard">
+                <div class="sixthTextCard__textBlock">
+                    <h1 class="animate__animated wow animate__fadeInUp">Our Showrooms</h1>
+                    <p class="tech_parTwenty animate__animated wow animate__fadeInRight">
+                        Lorem Ipsum is simply dummy text of the printing <br>
+                        and typesetting industry. Lorem Ipsum has been the <br>
+                        industry's standard dummy text.
+                    </p>
+                    <a href="javascript:void(0)" class="tech_ancButton tech_darkButton animate__animated wow animate__fadeInDown">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
-
+    <div class="contentBorder footerContent">
+        <div class="footerColumn">
+            <div class="footerColumn__content">
+                <div class="logo">
+                    <img src="./images/logolight.svg">
+                </div>
+                <ul class="footerContactList">
+                    <li><img class="icon" src="./images/facebookicon.svg"></li>
+                    <li><img class="icon" src="./images/twittericon.svg"></li>
+                    <li><img class="icon" src="./images/instaicon.svg"></li>
+                </ul>
+            </div>
+            <div class="footerCopyright">
+                <p>Copyright © 2022 | All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="footerColumn">
+            <div class="footerColumn__content">
+                <div class="footerColumn__title">
+                    <h3>Products</h3>
+                </div>
+                <ul class="footerColumn__list">
+                    <li class="changed">Sand Stone</li>
+                    <li>Stone</li>
+                    <li>Cement</li>
+                    <li>Soft Stone</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerColumn">
+            <div class="footerColumn__content">
+                <div class="footerColumn__title">
+                    <h3>Services</h3>
+                </div>
+                <ul class="footerColumn__list">
+                    <li>Measurement Service</li>
+                    <li>Product Advice</li>
+                    <li>Interior Design</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerColumn">
+            <div class="footerColumn__content">
+                <h3>Contact Information</h3>
+                <p class="tech_parFourteen">
+                    3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, <br>
+                    An Nuzhah, Riyadh 12474, <br>
+                    Saudi Arabia
+                </p>
+            </div>
+            <div class="footerCopyright">
+                <p>Created with love by <span>thecreation.design</span></p>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
@@ -338,5 +414,7 @@
 <script defer src="./jQuery/slider.js"></script>
 <script async src="./libs/modal/jquery.magnific-popup.min.js"></script>
 <script defer src="./jQuery/popup.js"></script>
+<script async src="./libs/animations/wowJS/wow.min.js"></script>
+<script defer src="./jQuery/animations.js"></script>
 </body>
 </html>

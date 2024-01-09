@@ -3,9 +3,8 @@ $(function () {
         new Swiper(".swiper", {
             direction: "horizontal",
             loop: true,
+            spaceBetween: 20,
             centeredSlides: true,
-            initialSlide: $("#fslide"),
-            slidesPerView: 3,
             breakpoints: {
                 768: {
                     slidesPerView: 1,
