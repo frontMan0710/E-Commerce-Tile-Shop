@@ -1,19 +1,39 @@
 $(function () {
-    if($(window).width() <= 1024) {
-        new Swiper(".swiper", {
+    if($(window).width() < 1024) {
+        new Swiper(".thirdSlider, .fourthSlider", {
             direction: "horizontal",
+            //effect: "coverflow",
+            spaceBetween: 30,
             loop: true,
-            spaceBetween: 20,
-            centeredSlides: true,
+            preloadImages: false,
+            lazy: {
+                loadPrevNext: true,
+                loadOnTransitionStart: false,
+            },
             breakpoints: {
-                768: {
+                300: {
                     slidesPerView: 1,
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    }
+                },
+                767: {
+                    slidesPerView: 3,
                 }
             }
+        })
+        new Swiper(".firstSlider", {
+            direction: "horizontal",
+            effect: "coverflow",
+            spaceBetween: 30,
+            slidesPerView: 1,
+            loop: true,
+            preloadImages: false,
+            lazy: {
+                loadPrevNext: true,
+                loadOnTransitionStart: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         })
     }
 })

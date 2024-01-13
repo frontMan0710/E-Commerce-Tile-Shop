@@ -22,8 +22,8 @@ $(function() {
         $(".footerCopyright p").css("font-size", "9px")
         $(".footerColumn > *").css("font-size", "14px")
         $(".tech_parFourteen").css("font-size", "14px")
-        $(".tech_parTwenty").css("font-size", "20px")
-        $(".tech_h3Twenty").css("font-size", "28px")
+        $(".tech_parFontSize").css("font-size", "20px")
+        $(".tech_h3FontSize").css("font-size", "28px")
         $("h1, h2").css("font-size", "48px")
     }
     if ($(window).width() <= 1920 && $(window).width() >= 1024) {
@@ -34,8 +34,15 @@ $(function() {
             "max-height":"630px", "width":"58.3vw", "height":"32.8vw"})
     }
     if($(window).width() <= 1023 && $(window).width() >= 768) {
+        var $headerHeight = $("header").height()
+        $(".start").css("height", "calc(100vh - " + $headerHeight + "px)");
+        $("#secondNthCard .firstGalleryImage .galleryTextBlock p").html("<p class=\"tech_parFontSize\">Ante mus blandit <br> sapien sociosqu</p>")
         $("main").css("padding-top", "70px")
-        $("main .start").css("height", "51.36vw")
+        $(".tech_parFontSize").css("font-size", "2vw")
+        $(".tech_h3FontSize").css("font-size", "2.73vw")
+        //$(".tech_parFourteen").css("font-size", "1.56vw")
+        $("h1, h2").css("font-size", "4.69vw")
+
     }
     if($(window).width() <= 767 && $(window).width() >= 300) {
         $("main").css("padding-top", "70px")

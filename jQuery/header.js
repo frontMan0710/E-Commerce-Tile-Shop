@@ -11,7 +11,7 @@ $(window).scroll(function () {
             //$(".headerLogo .logo").css({"transform":"translateY(0%)", "transition":"transform 0.8s"})
         }
     } else {
-        $("#menuContent").hide();
+        //$("#menuContent").hide();
     }
 })
 $(function () {
@@ -21,6 +21,8 @@ $(function () {
                 $(this).attr("src", "./images/searchicon.svg").addClass("searchButton")
             }
         })
+    } else {
+        $(this).attr("src", "./images/searchicon.svg")
     }
 })
 $(function () {

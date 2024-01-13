@@ -123,6 +123,11 @@ header #menuContent .searchForm input {
         height: 2.7vw;
         font-size: 0.83vw;
     }
+    .tech_secTitleBlock {
+        max-height: 199px;
+        height: 10.36vw;
+        padding-bottom: 2.08vw;
+    }
     .tech_secTitleBlock h2 {
         color: var(--color-black-mixin);
         font-weight: 700;
@@ -138,10 +143,16 @@ header #menuContent .searchForm input {
     .contentBorder {
         width: 92vw;
         margin: 0 auto;
+        height: 100%;
     }
     .icon {
         width: 25px;
         height: 25px;
+    }
+    .tech_ancButton {
+        width: 17.59vw;
+        height: 5.08vw;
+        font-size: 1.56vw;
     }
 }
 @media screen and (max-width: 767px) and (min-width: 425px) {
