@@ -30,22 +30,7 @@
     display: flex;
     justify-content: center;
   }
-  [class*="__textBlock"]{
-    h1 {
-      font-weight: 700;
-      font-size: 2.4vw;
-    }
-    p {
-      line-height: 1.5;
-      font-weight: 100;
-      font-size: 1.04vw;
-    }
-  }
   main {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    margin: 0 auto;
     .start {
       background-image: url("../images/min/startback_min.jpg");
       background-position: center;
@@ -64,18 +49,8 @@
           transform: translateX(1.04vw);
           z-index: auto;
           width: 37.29vw;
-          height: 20.9vw;
+          height: 20.93vw;
           padding: 2.6vw 1.87vw 2.7vw 2.23vw;
-          .startTextCard__textBlock {
-            color: var(--color-white);
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-between;
-            max-width: 637px;
-            width: 100%;
-            height: 100%;
-          }
         }
       }
     }
@@ -181,20 +156,9 @@
         justify-content: flex-start;
         .secondTextCard {
           background-color: var(--color-white);
-          max-width: 708px;
-          max-height: 402px;
           width: 36.87vw;
           height: 20.93vw;
-          padding: 2.6vw 1.87vw 2.7vw 2.23vw;
-          .secondTextCard__textBlock {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            max-width: 610px;
-            max-height: 300px;
-            width: 100%;
-            height: 100%;
-          }
+          padding: 2.6vw 2.86vw 2.7vw 2.23vw;
         }
       }
     }
@@ -211,15 +175,12 @@
           max-width: 968px;
           width: 50.41vw;
           height: 100%;
-          .thirdTextBlock, .thirdSlider, .thirdButton {
+          .thirdSlider, .thirdButton {
             width: 100%;
           }
-          .thirdContent__textBlock {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            text-align: left;
-            flex-direction: column;
+          .thirdTextBlock {
+            max-width: 610px;
+            width: 31.77vw;
             max-height: 259px;
             height: 13.48vw;
           }
@@ -453,16 +414,6 @@
           width: 36.04vw;
           height: 27.18vw;
           padding: 6.25vw 7.91vw 6.25vw 4.47vw;
-          .sixthTextCard__textBlock {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            flex-direction: column;
-            max-width: 454px;
-            max-height: 282px;
-            width: 23.64vw;
-            height: 14.68vw;
-          }
         }
       }
     }
@@ -500,22 +451,7 @@
     display: flex;
     justify-content: center;
   }
-  [class*="__textBlock"]{
-    h1 {
-      font-weight: 700;
-      font-size: 2.5vw;
-    }
-    p {
-      line-height: 1.5;
-      font-weight: 100;
-      font-size: 1.1vw;
-    }
-  }
   main {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    margin: 0 auto;
     .start {
       background-image: url("../images/min/startback_min.jpg");
       background-repeat: no-repeat;
@@ -537,16 +473,6 @@
           width: 69.99vw;
           height: 39.29vw;
           padding: 4.88vw 3.51vw 5.08vw 4.2vw;
-          .startTextCard__textBlock {
-            color: var(--color-white);
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-between;
-            max-width: 637px;
-            width: 100%;
-            height: 100%;
-          }
         }
       }
     }
@@ -597,7 +523,6 @@
                   }
                 }
               }
-
             }
             #firstNthCard {
               display: flex;
@@ -664,15 +589,6 @@
           width: 69.2vw;
           height: 39.29vw;
           padding: 4.88vw 5.37vw 5.08vw 4.2vw;
-          .secondTextCard__textBlock {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            max-width: 610px;
-            max-height: 300px;
-            width: 100%;
-            height: 100%;
-          }
         }
       }
     }
@@ -688,23 +604,12 @@
           flex-direction: column;
           width: 100%;
           height: 100%;
-          .thirdTextBlock, .thirdSlider, .thirdButton {
+          .thirdSlider, .thirdButton {
             width: 100%;
           }
-          .thirdContent__textBlock {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            text-align: left;
-            flex-direction: column;
+          .thirdTextBlock {
             max-height: 259px;
             height: 25.31vw;
-            h1 {
-
-            }
-            p {
-
-            }
           }
           .thirdSlider {
             max-height: 325px;
@@ -845,30 +750,16 @@
         justify-content: flex-end;
         .sixthTextCard {
           background-color: var(--color-white);
-          max-width: 692px;
-          max-height: 522px;
           width: 67.64vw;
           height: 51.02vw;
           padding: 11.73vw 14.85vw 11.73vw 8.4vw;
-          .sixthTextCard__textBlock {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            flex-direction: column;
-            max-width: 454px;
-            max-height: 282px;
-            width: 44.37vw;
-            height: 27.56vw;
-          }
         }
       }
     }
   }
 }
-@media screen and (max-width: 767px) and (min-width: 425px) {
+@media screen and (max-width: 767px) and (min-width: 429px) {
   main {
-    flex: 1 1 auto;
-    margin: 0 auto;
     background-color: crimson;
     .start {
       background-image: url("../images/startbackmobile.jpg");
@@ -885,22 +776,269 @@
     }
   }
 }
-@media screen and (max-width: 424px) and (min-width: 300px) {
+@media screen and (max-width: 428px) and (min-width: 300px) {
+  .firstTitle, .fourthTitle, .fifthTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    max-height: 129px;
+    height: 37.14vw;
+    h2 {
+      position: relative;
+      max-height: 40px;
+      height: 9.34vw;
+      &::after {
+        content: "";
+        background-color: var(--color-grey);
+        position: absolute;
+        max-width: 125px;
+        max-height: 3px;
+        width: 29.3vw;
+        height: 1.15vw;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5px;
+      }
+    }
+    p {
+      text-align: center;
+      line-height: 25px;
+      font-size: 3.5vw;
+      br {
+        display: none;
+      }
+    }
+  }
+  .fourthButton {
+    display: flex;
+    justify-content: center;
+  }
   main {
-    flex: 1 1 auto;
-    margin: 0 auto;
-    background-color: crimson;
     .start {
-      background-image: url("../images/startbackmobile.jpg");
-      background-position: top center;
-      background-repeat: no-repeat;
+      background-image: url("../images/min/startbackmobile_min.jpg");
+      background-position: top left;
       background-size: contain;
-      max-width: 100vw;
-      max-height: 100vh;
+      background-repeat: no-repeat;
+      width: 100%;
+      max-height: 727px;
+      height: auto;
       margin: 0 auto;
-      .start__content {
-        height: 100%;
-
+      .startContent {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 20px;
+        .startTextCard {
+          background-color: var(--color-black-opacity);
+          backdrop-filter: blur(10px);
+          height: 76.63vw;
+          padding: 5.14vw 4.67vw 8.17vw 4.67vw;
+        }
+      }
+    }
+    .first {
+      max-height: 663px;
+      height: 154.9vw;
+      .firstContent {
+        .firstSlider {
+          width: 100%;
+          max-height: 445px;
+          height: 103.97vw;
+          padding: 20px 0 20px 0;
+          .sliderWrapper {
+            .firstSliderCard {
+              display: flex;
+              justify-content: center;
+              max-height: 405px;
+              height: 100%;
+              .firstGalleryImage {
+                position: relative;
+                img {
+                  max-width: 100%;
+                  max-height: 350px;
+                }
+                .galleryTextBlock {
+                  background-color: var(--color-black-mixin);
+                  color: var(--color-white);
+                  border: 1px var(--color-white) solid;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+                  text-align: center;
+                  position: absolute;
+                  z-index: 3;
+                  max-width: 361px;
+                  max-height: 93px;
+                  width: 84.34vw;
+                  height: 21.72vw;
+                  bottom: 0;
+                  left: 50%;
+                  padding: 4.67vw 11.68vw 3.5vw 11.68vw;
+                  transform: translate(-50%, 5vw);
+                  h3 {
+                    font-weight: normal;
+                  }
+                  p {
+                    font-weight: 100;
+                    font-size: 3.5vw;
+                  }
+                }
+              }
+            }
+            #firstNthCard, #secondNthCard {
+              display: flex;
+              justify-content: center;
+            }
+            #thirdNthCard {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-direction: column;
+              .firstGalleryImage {
+                width: 80%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .second {
+      background-image: url("../images/min/secondbackmobile_min.jpg");
+      background-position: bottom left;
+      background-repeat: no-repeat;
+      max-height: 817px;
+      height: 190.88vw;
+      .secondContent {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        .secondTextCard {
+          background-color: var(--color-white);
+          height: 86.21vw;
+          padding: 5.14vw 4.67vw 8.17vw 4.67vw;
+        }
+      }
+    }
+    .third {
+      max-height: 653px;
+      height: 152.57vw;
+      padding-top: 40px;
+      .thirdContent {
+        display: flex;
+        .thirdContent__content {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          max-width: 388px;
+          width: 90.65vw;
+          height: 100%;
+          .thirdSlider {
+            width: 100%;
+          }
+          .thirdTextBlock {
+            text-align: center;
+            height: 70.79vw;
+          }
+          .thirdSlider {
+            max-height: 365px;
+            max-width: 100%;
+            width: 100%;
+            height: 85.28vw;
+            margin: 0;
+            padding: 20px 0 20px 0;
+            .thirdSliderWrapper {
+              .thirdSliderSlide {
+                display: flex;
+                justify-content: center;
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                img {
+                  display: none;
+                  //max-height: 100%;
+                }
+                #thirdSliderImage {
+                  width: 100%;
+                  height: 100%;
+                  background-image: url("../images/min/thirdgallery1_min.jpg");
+                  background-repeat: no-repeat;
+                  background-size: 79.9vw;
+                  background-position: center center;
+                }
+              }
+            }
+          }
+          .thirdButton {
+            display: none;
+          }
+        }
+        .thirdContent__video {
+          display: none;
+        }
+      }
+    }
+    .fourth {
+      max-height: 757px;
+      height: 177.28vw;
+      .fourthContent {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .fourthSlider {
+          max-height: 481px;
+          height: 112.38vw;
+          width: 100%;
+          padding: 20px 0 20px;
+          .fourthSliderWrapper {
+            .fourthSlide {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              max-width: 100%;
+              max-height: 100%;
+              height: 100%;
+              .fourthSlideImage {
+                img {
+                  max-height: 100%;
+                  max-width: 100%;
+                }
+              }
+              .fourthSlideTextBlock {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 3px;
+                max-height: 91px;
+                height: 21.26vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    .fifth {
+      display: none;
+    }
+    .sixth {
+      background-image: url("../images/min/sixthback_min.jpg");
+      background-size: auto;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      max-height: 907px;
+      height: 211.91vw;
+      .sixthContent {
+        display: flex;
+        align-items: flex-start;
+        .sixthTextCard {
+          background-color: var(--color-white);
+          height: 71.96vw;
+          padding: 5.14vw 4.67vw 10.98vw 4.9vw;
+        }
       }
     }
   }

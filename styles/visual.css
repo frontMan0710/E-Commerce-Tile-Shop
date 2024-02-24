@@ -18,8 +18,6 @@
     src: url("../styles/fonts/ProximaNovaT-Thin.ttf");
     font-weight: 100;
 }
-
-/*-Reset-Construction-*/
 * { margin: 0; padding: 0; border: 0; box-sizing: border-box; font-family: "Proxima Nova", sans-serif}
 body { width: 100%; height: 100%;}
 body.lock {
@@ -33,7 +31,8 @@ ul li:hover {
     color: var(--color-grey);
     cursor: pointer;
 }
-/*-Variables-*/
+
+
 :root {
     --color-black: rgba(0, 0, 0, 1);
     --color-black-opacity: rgba(0, 0, 0, 0.36);
@@ -48,12 +47,16 @@ ul li:hover {
     margin: 0 auto;
     height: 100%;
 }
+main {
+    flex: 1 1 auto;
+    margin: 0 auto;
+}
 section .contentBorder {
     padding: 40px 0 40px 0;
 }
-.headerTopButton {
-    width: 25px;
-    height: 25px;
+.logo {
+    display: flex;
+    align-items: center;
 }
 .icon:hover {
     transform: scale(1.2);
@@ -82,6 +85,47 @@ section .contentBorder {
     max-width: 180px;
     max-height: 52px;
 }
+
+#burgerIcon span, #burgerIcon::before, #burgerIcon::after {
+    content: "";
+    background-color: var(--color-black);
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    left: 0;
+    transition: 0.3s ease 0s;
+}
+#burgerIcon {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    width: 30px;
+    height: 20px;
+}
+#burgerIcon span {
+    top: 50%;
+    transform: scale(1) translateY(-50%) translateX(0%);
+}
+#burgerIcon::before {
+    top: 0;
+}
+#burgerIcon::after {
+    bottom: 0;
+}
+#burgerIcon.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+}
+#burgerIcon.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translateY(50%);
+}
+#burgerIcon.active span {
+    top: 50%;
+    transform: scale(1) translateX(140px);
+}
+
 header {
     background-color: var(--color-white);
     position: fixed;
@@ -98,6 +142,19 @@ header #menuContent .searchForm input {
     padding-left: 20px;
     font-size: 1rem;
 }
+.tech_textBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tech_textBlock p {
+    font-weight: 100;
+    line-height: 1.5;
+}
+.tech_textBlock h1 {
+    font-weight: 700;
+}
+
 .footerColumn > * {
     width: 100%;
 }
@@ -108,10 +165,12 @@ header #menuContent .searchForm input {
 .tech_secTitleBlock {
     text-align: center;
 }
+.tech_white {
+    color: var(--color-white);
+}
 @media screen and (max-width: 1920px) and (min-width: 1024px) {
     .contentBorder {
         width: 74vw;
-        margin: 0 auto;
     }
     .icon {
         max-width: 17px;
@@ -138,12 +197,14 @@ header #menuContent .searchForm input {
         font-weight: 100;
         font-size: 1.04vw;
     }
+    .tech_textBlock {
+        max-width: 716px;
+        max-height: 522px;
+    }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .contentBorder {
         width: 92vw;
-        margin: 0 auto;
-        height: 100%;
     }
     .icon {
         width: 25px;
@@ -154,24 +215,44 @@ header #menuContent .searchForm input {
         height: 5.08vw;
         font-size: 1.56vw;
     }
+    .tech_textBlock {
+        max-width: 716px;
+        max-height: 522px;
+    }
 }
-@media screen and (max-width: 767px) and (min-width: 425px) {
+@media screen and (max-width: 767px) and (min-width: 429px) {
     .contentBorder {
-        width: 92vw;
-        margin: 0 auto;
+        width: 90.65vw;
     }
     .icon {
         width: 25px;
         height: 25px;
     }
+    .tech_textBlock {
+        max-width: 716px;
+        max-height: 522px;
+    }
 }
-@media screen and (max-width: 424px) and (min-width: 300px) {
+@media screen and (max-width: 428px) and (min-width: 300px) {
     .contentBorder {
         width: 92vw;
-        margin: 0 auto;
     }
     .icon {
         width: 25px;
         height: 25px;
+    }
+    section .contentBorder {
+        padding: 20px 0 20px 0;
+    }
+    .tech_ancButton {
+        max-width: 180px;
+        max-height: 45px;
+        width: 42.05vw;
+        height: 10.51vw;
+        font-size: 3.5vw;
+    }
+    .tech_textBlock {
+        width: 100%;
+        max-height: 369px;
     }
 }

@@ -20,15 +20,9 @@
         <div class="logo">
             <img src="./images/logo.svg" alt="logo">
         </div>
-        <div class="headerTopButton">
-            <img class="icon headerCart" src="./images/carticon.svg" alt="">
-        </div>
     </div>
     <nav id="menuContent">
         <div class="contentBorder burgerWrapper">
-            <div id="searchButton" class="headerTopButton searchButton">
-                <button><img id="headerSearch" class="icon" src="./images/searchicon.svg"></button>
-            </div>
             <ul class="navigation">
                 <li>HOME</li>
                 <li>SPACES</li>
@@ -38,16 +32,8 @@
                 <li>MEDIA</li>
                 <li>CONTACT</li>
             </ul>
-            <form action="/search" class="searchForm">
-                <input type="text" name="search" class="searchInput" placeholder="Search...">
-                <button type="submit" class="tech_darkButton">SEARCH</button>
-            </form>
             <div class="profileAction">
-                <ul>
-                    <li><img id="headerCart" class="icon" src="./images/carticon.svg" alt=""></li>
-                    <li><img id="headerFav" class="icon" src="./images/hearticon.svg" alt=""></li>
-                    <li><img id="headerProfile" class="icon" src="./images/usericon.svg" alt=""></li>
-                </ul>
+                <a href="javascript:void(0)" class="tech_ancButton tech_darkButton" id="callback">CALLBACK</a>
             </div>
         </div>
     </nav>
@@ -55,17 +41,15 @@
 <main>
     <section class="start">
         <div class="contentBorder startContent">
-            <div class="tech_textBlock startTextCard">
-                <div class="startTextCard__textBlock animate__animated animate__fadeInRight">
-                    <h1>New Generation Ceramic Tile</h1>
-                    <p class="tech_parFontSize">
-                        Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend <br>
-                        aptent dapibus metus maecenas consequat. Elementum interdum a <br>
-                        semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra <br>
-                        sagittis sit aliquet at. Magna nam platea justo.
-                    </p>
-                    <a href="javascript:void(0)" class="tech_lightButton tech_ancButton">LEARN MORE</a>
-                </div>
+            <div class="tech_textBlock tech_white startTextCard animate__animated animate__fadeInRight">
+                <h1>New Generation Ceramic Tile</h1>
+                <p class="tech_parFontSize">
+                    Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend
+                    aptent dapibus metus maecenas consequat. Elementum interdum a
+                    semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra
+                    sagittis sit aliquet at. Magna nam platea justo.
+                </p>
+                <a href="javascript:void(0)" class="tech_lightButton tech_ancButton">LEARN MORE</a>
             </div>
         </div>
     </section>
@@ -124,28 +108,26 @@
     <section class="second">
         <div class="contentBorder secondContent">
             <div class="tech_textBlock secondTextCard">
-                <div class="secondTextCard__textBlock">
-                    <h1 class="animate__animated wow animate__fadeInUp">Vision</h1>
-                    <p class="tech_parFontSize animate__animated wow animate__fadeInLeftBig">
-                        Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend <br>
-                        aptent dapibus metus maecenas consequat. Elementum interdum a <br>
-                        semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra<br>
-                        sagittis sit aliquet at. Magna nam platea justo.
-                    </p>
-                    <a href="javascript:void(0)" class="tech_ancButton tech_darkButton animate__animated wow animate__fadeInLeft">LEARN MORE</a>
-                </div>
+                <h1 class="animate__animated wow animate__fadeInUp">Vision</h1>
+                <p class="tech_parFontSize animate__animated wow animate__fadeInLeftBig">
+                    Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend
+                    aptent dapibus metus maecenas consequat. Elementum interdum a
+                    semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra
+                    sagittis sit aliquet at. Magna nam platea justo.
+                </p>
+                <a href="javascript:void(0)" class="tech_ancButton tech_darkButton animate__animated wow animate__fadeInLeft">LEARN MORE</a>
             </div>
         </div>
     </section>
     <section class="third">
         <div class="contentBorder thirdContent">
             <div class="thirdContent__content">
-                <div class="thirdContent__textBlock">
+                <div class="tech_textBlock thirdTextBlock">
                     <h1 class="animate__animated wow animate__fadeInLeft">Creative Solutions <br> by Professional Designers</h1>
                     <p class="tech_parFontSize animate__animated wow animate__fadeInLeftBig">
-                        Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend <br>
-                        aptent dapibus metus maecenas consequat. Elementum interdum a <br>
-                        semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra <br>
+                        Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend
+                        aptent dapibus metus maecenas consequat. Elementum interdum a
+                        semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra
                         sagittis sit aliquet at. Magna nam platea justo.
                     </p>
                 </div>
@@ -153,6 +135,7 @@
                     <div class="thirdSliderWrapper swiper-wrapper">
                         <div class="thirdSliderSlide swiper-slide wow">
                             <img src="./images/min/thirdgallery1_min.jpg" loading="lazy">
+                            <div id="thirdSliderImage"></div>
                         </div>
                         <div class="thirdSliderSlide swiper-slide wow">
                             <img src="./images/min/thirdgallery2_min.jpg" loading="lazy">
@@ -337,15 +320,13 @@
     <section class="sixth">
         <div class="contentBorder sixthContent">
             <div class="tech_textBlock sixthTextCard">
-                <div class="sixthTextCard__textBlock">
-                    <h1 class="animate__animated wow animate__fadeInUp">Our Showrooms</h1>
-                    <p class="tech_parFontSize animate__animated wow animate__fadeInRight">
-                        Lorem Ipsum is simply dummy text of the printing <br>
-                        and typesetting industry. Lorem Ipsum has been the <br>
-                        industry's standard dummy text.
-                    </p>
-                    <a href="javascript:void(0)" class="tech_ancButton tech_darkButton animate__animated wow animate__fadeInDown">LEARN MORE</a>
-                </div>
+                <h1 class="animate__animated wow animate__fadeInUp">Our Showrooms</h1>
+                <p class="tech_parFontSize animate__animated wow animate__fadeInRight">
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text.
+                </p>
+                <a href="javascript:void(0)" class="tech_ancButton tech_darkButton animate__animated wow animate__fadeInDown">LEARN MORE</a>
             </div>
         </div>
     </section>

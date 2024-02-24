@@ -2,7 +2,6 @@ $(function () {
     if($(window).width() < 1024) {
         new Swiper(".thirdSlider, .fourthSlider", {
             direction: "horizontal",
-            //effect: "coverflow",
             spaceBetween: 30,
             loop: true,
             preloadImages: false,
