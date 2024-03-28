@@ -135,7 +135,6 @@
                     <div class="thirdSliderWrapper swiper-wrapper">
                         <div class="thirdSliderSlide swiper-slide wow">
                             <img src="./images/min/thirdgallery1_min.jpg" loading="lazy">
-                            <div id="thirdSliderImage"></div>
                         </div>
                         <div class="thirdSliderSlide swiper-slide wow">
                             <img src="./images/min/thirdgallery2_min.jpg" loading="lazy">
@@ -333,8 +332,11 @@
 </main>
 <footer>
     <div class="contentBorder footerContent">
-        <div class="footerColumn">
-            <div class="footerColumn__content">
+        <div class="footerMobileLogo">
+            <img src="./images/logolight.svg">
+        </div>
+        <div class="footerColumn notCollapsible">
+            <div class="footerColContent">
                 <div class="logo">
                     <img src="./images/logolight.svg">
                 </div>
@@ -349,11 +351,11 @@
             </div>
         </div>
         <div class="footerColumn">
-            <div class="footerColumn__content">
-                <div class="footerColumn__title">
+            <div class="footerColContent">
+                <div class="footerColTitle">
                     <h3>Products</h3>
                 </div>
-                <ul class="footerColumn__list">
+                <ul class="footerColList tech_parFourteen collapsible">
                     <li class="changed">Sand Stone</li>
                     <li>Stone</li>
                     <li>Cement</li>
@@ -362,11 +364,11 @@
             </div>
         </div>
         <div class="footerColumn">
-            <div class="footerColumn__content">
-                <div class="footerColumn__title">
+            <div class="footerColContent">
+                <div class="footerColTitle">
                     <h3>Services</h3>
                 </div>
-                <ul class="footerColumn__list">
+                <ul class="footerColList tech_parFourteen collapsible">
                     <li>Measurement Service</li>
                     <li>Product Advice</li>
                     <li>Interior Design</li>
@@ -374,15 +376,30 @@
             </div>
         </div>
         <div class="footerColumn">
-            <div class="footerColumn__content">
-                <h3>Contact Information</h3>
-                <p class="tech_parFourteen">
+            <div class="footerColContent">
+                <div class="footerColTitle">
+                    <h3>Contact Information</h3>
+                </div>
+                <p class="tech_parFourteen collapsible">
                     3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, <br>
                     An Nuzhah, Riyadh 12474, <br>
                     Saudi Arabia
                 </p>
+
             </div>
-            <div class="footerCopyright">
+            <div class="footerCopyright collapsible">
+                <p>Created with love by <span>thecreation.design</span></p>
+            </div>
+        </div>
+        <hr>
+        <div class="contactListWrapper">
+            <ul class="footerContactList">
+                <li><img class="icon" src="./images/facebookicon.svg"></li>
+                <li><img class="icon" src="./images/twittericon.svg"></li>
+                <li><img class="icon" src="./images/instaicon.svg"></li>
+            </ul>
+            <div class="mobileFooterCopyright">
+                <p>Copyright © 2022 | All Rights Reserved.</p>
                 <p>Created with love by <span>thecreation.design</span></p>
             </div>
         </div>
@@ -398,5 +415,6 @@
 <script defer src="./jQuery/popup.js"></script>
 <script async src="./libs/animations/wowJS/wow.min.js"></script>
 <script defer src="./jQuery/animations.js"></script>
+<script defer src="./jQuery/collapsible.js"></script>
 </body>
 </html>

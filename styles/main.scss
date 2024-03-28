@@ -1,44 +1,22 @@
 @media screen and (min-width: 1024px) {
-  .firstTitle, .fourthTitle, .fifthTitle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
-    max-height: 159px;
-    height: 14.53vw;
-    h2 {
-      position: relative;
-      max-height: 73px;
-      height: 3.8vw;
-      &::after {
-        content: "";
-        background-color: var(--color-grey);
-        position: absolute;
-        max-width: 150px;
-        max-height: 5px;
-        width: 7.8vw;
-        height: 0.26vw;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 5px;
+  main {
+    section {
+      div[class*="Title"] {
+        height: 14.53vw;
+        h2 {
+          height: 3.8vw;
+          &::after {
+            width: 7.8vw;
+            height: 0.26vw;
+          }
+        }
       }
     }
-  }
-  .fourthButton, .fifthButton {
-    display: flex;
-    justify-content: center;
-  }
-  main {
     .start {
       background-image: url("../images/min/startback_min.jpg");
       background-position: center;
-      background-repeat: no-repeat;
       max-width: 100vw;
       max-height: 526px;
-      width: 100%;
-      margin: 0 auto;
       .startContent {
         display: flex;
         align-items: center;
@@ -47,7 +25,6 @@
           background-color: var(--color-black-opacity);
           backdrop-filter: blur(10px);
           transform: translateX(1.04vw);
-          z-index: auto;
           width: 37.29vw;
           height: 20.93vw;
           padding: 2.6vw 1.87vw 2.7vw 2.23vw;
@@ -55,41 +32,41 @@
       }
     }
     .first {
-      max-height: 917px;
-      height: fit-content;
+      max-height: 997px;
+      height: 51.92vw;
       .firstContent {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
         .firstSlider {
-          width: 100%;
-          max-height: 698px;
-          //max-height: 718px;
-          height: 36.35vw;
-          //height: 36.35vw;
-          padding: 40px 0 40px 0;
+          max-height: 658px;
+          height: 34.27vw;
           .sliderWrapper {
             gap: 1.38vw;
             .firstSliderCard {
               display: flex;
               justify-content: center;
-              height: 100%;
+              max-height: 638px;
+              height: 33.22vw;
               .firstGalleryImage {
                 position: relative;
                 img {
                   max-width: 100%;
-                  max-height: 100%;
+                  max-height: 618px;
+                  height: 100%;
                 }
                 .galleryTextBlock {
                   background-color: var(--color-black-mixin);
                   color: var(--color-white);
                   border: 1px var(--color-white) solid;
                   display: flex;
-                  align-items: center;
                   justify-content: center;
                   flex-direction: column;
                   text-align: center;
                   position: absolute;
                   max-height: 114px;
-                  height: 5.94vw;
-                  bottom: -20px;
+                  height: 5.93vw;
+                  bottom: -1.04vw;
                   left: 50%;
                   transform: translateX(-50%);
                   h3 {
@@ -129,6 +106,7 @@
               flex-direction: column;
               justify-content: space-between;
               max-width: 454px;
+              max-height: 618px;
               width: 23.64vw;
               .firstGalleryImage {
                 .galleryTextBlock {
@@ -347,15 +325,16 @@
       }
     }
     .fifth {
-      max-height: 1351px;
+      max-height: 1391px;
       height: fit-content;
       .fifthContent {
         .fifthCatalogue {
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
-          max-height: 1060px;
-          height: 55.2vw;
+          max-height: 1100px;
+          height: 57.29vw;
+          padding: 20px 0 20px 0;
           .fifthCatalogueCard {
             display: flex;
             flex-direction: column;
@@ -420,47 +399,25 @@
   }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-  .firstTitle, .fourthTitle, .fifthTitle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
-    max-height: 159px;
-    height: 14.53vw;
-    h2 {
-      position: relative;
-      max-height: 73px;
-      height: 7.13vw;
-      &::after {
-        content: "";
-        background-color: var(--color-grey);
-        position: absolute;
-        max-width: 150px;
-        max-height: 5px;
-        width: 17.66vw;
-        height: 0.48vw;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 5px;
+  main {
+    section {
+      div[class*="Title"] {
+        height: 14.53vw;
+        h2 {
+          height: 7.13vw;
+          &::after {
+            width: 17.66vw;
+            height: 0.48vw;
+          }
+        }
       }
     }
-  }
-  .fourthButton, .fifthButton {
-    display: flex;
-    justify-content: center;
-  }
-  main {
     .start {
       background-image: url("../images/min/startback_min.jpg");
-      background-repeat: no-repeat;
       background-size: cover;
       background-position: 15% center;
       max-width: 100vw;
       max-height: 954px;
-      width: 100%;
-      margin: 0 auto;
       .startContent {
         display: flex;
         align-items: center;
@@ -692,18 +649,20 @@
       .fifthContent {
         .fifthCatalogue {
           display: flex;
-          justify-content: center;
           flex-wrap: wrap;
-          gap: 20px;
+          gap: 1.95vw;
           max-height: fit-content;
           height: fit-content;
           .fifthCatalogueCard {
             display: flex;
             flex-direction: column;
-            max-width: 333px;
+            max-width: 300px;
             max-height: 530px;
-            width: 32.55vw;
+            width: 29.32vw;
             height: 51.8vw;
+            h3 {
+              text-align: center;
+            }
             .fifthCatalogueImage {
               img {
                 max-height: 100%;
@@ -742,7 +701,6 @@
       height: 71.26vw;
       .sixthContent {
         background-image: url("../images/min/sixthback_min.jpg");
-        background-repeat: no-repeat;
         background-size: cover;
         background-position: left center;
         display: flex;
@@ -760,76 +718,276 @@
 }
 @media screen and (max-width: 767px) and (min-width: 429px) {
   main {
-    background-color: crimson;
+    section {
+      div[class*="Title"] {
+        height: 20.73vw;
+        h2 {
+          height: 9.51vw;
+          &::after {
+            width: 28vw;
+            height: 0.4vw;
+          }
+        }
+      }
+    }
     .start {
       background-image: url("../images/startbackmobile.jpg");
       background-position: top center;
-      background-repeat: no-repeat;
       background-size: contain;
       max-width: 100vw;
+      height: 101.43vw;
+      .startContent {
+        .startTextCard {
+          background-color: var(--color-black-opacity);
+          backdrop-filter: blur(10px);
+          height: 50vw;
+          padding: 4.14vw 3.77vw 5.17vw 3.77vw;
+        }
+      }
+    }
+    .first {
       max-height: fit-content;
-      margin: 0 auto;
-      .start__content {
-        height: 100%;
-
+      height: auto;
+      .firstContent {
+        .firstSlider {
+          width: 100%;
+          max-height: 620px;
+          height: 80.83vw;
+          padding: 40px 0 40px 0;
+          .sliderWrapper {
+            .firstSliderCard {
+              max-height: 638px;
+              width: 100%;
+              height: 62.36vw;
+              min-width: 0;
+              .firstGalleryImage {
+                position: relative;
+                img {
+                  max-width: 100%;
+                  max-height: 100%;
+                }
+                .galleryTextBlock {
+                  background-color: var(--color-black-mixin);
+                  color: var(--color-white);
+                  border: 1px var(--color-white) solid;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+                  text-align: center;
+                  position: absolute;
+                  max-height: 114px;
+                  height: 11.14vw;
+                  bottom: -20px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  h3 {
+                    font-weight: normal;
+                    font-size: 2.73vw;
+                  }
+                  p {
+                    font-weight: 100;
+                    font-size: 2.08vw;
+                    margin-top: 0.52vw;
+                  }
+                }
+              }
+            }
+            #firstNthCard {
+              display: flex;
+              justify-content: center;
+              .firstGalleryImage {
+                .galleryTextBlock {
+                  max-width: 535px;
+                  width: 69.75vw;
+                }
+              }
+            }
+            #secondNthCard {
+              display: flex;
+              justify-content: center;
+              .firstGalleryImage {
+                .galleryTextBlock {
+                  max-width: 299px;
+                  width: 38.98vw;
+                }
+              }
+            }
+            #thirdNthCard {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-direction: column;
+              .firstGalleryImage {
+                width: 44.37vw;
+                .galleryTextBlock {
+                  max-width: 415px;
+                  width: 54.1vw;
+                }
+              }
+            }
+          }
+          .swiper-button-prev, .swiper-button-next {
+            background-color: var(--color-white);
+            color: var(--color-black);
+            width: 40px;
+            height: 60px;
+            border-radius: 3px;
+            &:focus {
+              background-color: var(--color-black-mixin);
+              color: var(--color-white);
+            }
+          }
+        }
+      }
+    }
+    .second {
+      background-image: url("../images/min/secondback_min.jpg");
+      background-position: bottom left;
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-height: 768px;
+      height: 100.1vw;
+      .secondContent {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        .secondTextCard {
+          background-color: var(--color-white);
+          height: 50vw;
+          padding: 5.14vw 4.67vw 8.17vw 4.67vw;
+        }
+      }
+    }
+    .third {
+      max-height: 768px;
+      height: 100.1vw;
+      .thirdContent {
+        display: flex;
+        .thirdContent__content {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          width: 100vw;
+          .thirdTextBlock {
+            text-align: center;
+            max-height: 269px;
+            height: 35.07vw;
+          }
+          .thirdSlider {
+            max-height: 365px;
+            width: 100%;
+            height: 100%;
+            padding: 20px 0 20px 0;
+            .thirdSliderWrapper {
+              .thirdSliderSlide {
+                min-width: 0;
+                max-height: 325px;
+                max-width: 257px;
+                img {
+                  width: 33.5vw;
+                  height: 42.37vw;
+                }
+              }
+            }
+          }
+          .thirdButton {
+            display: none;
+          }
+        }
+        .thirdContent__video {
+          display: none;
+        }
+      }
+    }
+    .fourth {
+      max-height: 768px;
+      height: 100.1vw;
+      .fourthContent {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .fourthSlider {
+          max-height: 441px;
+          height: 52.28vw;
+          width: 100%;
+          padding: 20px 0 20px;
+          .fourthSliderWrapper {
+            .fourthSlide {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              max-width: 100%;
+              max-height: 100%;
+              height: 100%;
+              .fourthSlideImage {
+                img {
+                  max-height: 100%;
+                  max-width: 100%;
+                }
+              }
+              .fourthSlideTextBlock {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 3px;
+                max-height: 91px;
+                height: 11.86vw;
+                p {
+                  font-size: 2.34vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .fifth {
+      display: none;
+    }
+    .sixth {
+      background-image: url("../images/min/sixthback_min.jpg");
+      background-size: contain;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      max-height: 768px;
+      height: 100.1vw;
+      .sixthContent {
+        display: flex;
+        align-items: flex-start;
+        .sixthTextCard {
+          background-color: var(--color-white);
+          height: 50vw;
+          padding: 5.14vw 4.67vw 10.98vw 4.9vw;
+        }
       }
     }
   }
 }
 @media screen and (max-width: 428px) and (min-width: 300px) {
-  .firstTitle, .fourthTitle, .fifthTitle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
-    max-height: 129px;
-    height: 37.14vw;
-    h2 {
-      position: relative;
-      max-height: 40px;
-      height: 9.34vw;
-      &::after {
-        content: "";
-        background-color: var(--color-grey);
-        position: absolute;
-        max-width: 125px;
-        max-height: 3px;
-        width: 29.3vw;
-        height: 1.15vw;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 5px;
-      }
-    }
-    p {
-      text-align: center;
-      line-height: 25px;
-      font-size: 3.5vw;
-      br {
-        display: none;
-      }
-    }
-  }
-  .fourthButton {
-    display: flex;
-    justify-content: center;
-  }
   main {
+    section {
+      div[class*="Title"] {
+        height: 30.14vw;
+        h2 {
+          height: 9.34vw;
+          &::after {
+            width: 29.2vw;
+            height: 0.7vw;
+          }
+        }
+      }
+    }
     .start {
       background-image: url("../images/min/startbackmobile_min.jpg");
       background-position: top left;
       background-size: contain;
-      background-repeat: no-repeat;
-      width: 100%;
       max-height: 727px;
-      height: auto;
-      margin: 0 auto;
+      height: 159.88vw;
       .startContent {
         display: flex;
         align-items: flex-end;
-        padding-bottom: 20px;
         .startTextCard {
           background-color: var(--color-black-opacity);
           backdrop-filter: blur(10px);

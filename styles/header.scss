@@ -10,13 +10,6 @@
       width: 100%;
       max-height: 107px;
       height: 5.57vw;
-      .logo {
-        img {
-          max-width: 162px;
-          max-height: 57px;
-          width: 8.43vw;
-        }
-      }
       #burgerIcon {
         display: none;
       }
@@ -41,12 +34,7 @@
             align-items: center;
             font-weight: 600;
             width: fit-content;
-            &:first-of-type {
-              padding-left: 0;
-            }
-            &:last-of-type {
-              padding-right: 0;
-            }
+            font-size: 0.83vw;
           }
         }
         .profileAction {
@@ -73,11 +61,6 @@
       .logo {
         margin: 0 auto;
         transform: translateX(-15%);
-        img {
-          max-width: 101px;
-          max-height: 35px;
-          width: 100%;
-        }
       }
     }
     #menuContent.active {
@@ -107,8 +90,8 @@
             display: flex;
             align-items: center;
             font-weight: 600;
-            font-size: 1.56vw;
             width: fit-content;
+            font-size: 1.56vw;
           }
         }
         .profileAction {
@@ -132,11 +115,6 @@
       .logo {
         margin: 0 auto;
         transform: translateX(-15%);
-        img {
-          max-width: 101px;
-          max-height: 35px;
-          width: 100%;
-        }
       }
     }
     #menuContent.active {
@@ -168,8 +146,6 @@
             display: flex;
             align-items: center;
             font-weight: 600;
-            font-size: 1rem;
-            width: fit-content;
           }
         }
       }

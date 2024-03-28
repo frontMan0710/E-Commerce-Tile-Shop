@@ -13,7 +13,7 @@ $(function () {
                 300: {
                     slidesPerView: 1,
                 },
-                767: {
+                429: {
                     slidesPerView: 3,
                 }
             }
