@@ -6,6 +6,15 @@
     <meta name="author" content="@frontMan">
     <title>E-Commerce - Tile Shop</title>
     <link rel="icon" type="image/x-icon" href="./images/min/flet.ico">
+    <meta name="description" content="We can to offer you tiles for everything and some style">
+    <meta name="keywords" content="Tile, Ceramic Tile, Hot offer, Sale, Professional, Interior">
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Do you changing tile for an interior?">
+    <meta property="og:description" content="Let's see our catalogue, we offer a wide selection of products">
+    <meta property="og:url" content="http://localhost:63342/tileShop/index.html?_ijt=rfkl11uabblr7b6a9o6pv0fm35">
+    <meta property="og:image" content="http://localhost:63342/tileShop/images/min/fourthslide3_min.jpg">
+    <meta property="og:image:width" content="333">
+    <meta property="og:image:height" content="333">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./libs/animations/animate.min.css">
     <link rel="stylesheet" href="./libs/swiper/unpkg.com_swiper@8.4.7_swiper-bundle.min.css">
@@ -64,34 +73,42 @@
             </div>
             <div class="swiper firstSlider">
                 <div class="swiper-wrapper tech_cards sliderWrapper">
-                    <div class="swiper-slide wow firstSliderCard" id="firstNthCard">
+                    <div class="swiper-slide wow firstSliderCard">
                         <div class="firstGalleryImage">
-                            <img src="./images/min/firstgallery1_min.jpg" loading="lazy">
+                            <a href="./images/min/firstgallery1_min.jpg" class="popupTrig">
+                                <img src="./images/min/firstgallery1_min.jpg" loading="lazy">
+                            </a>
                             <div class="galleryTextBlock">
                                 <h3 class="tech_h3FontSize">Bathroom Tiles</h3>
                                 <p class="tech_parFontSize">Ante mus blandit sapien sociosqu per consequat ad.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide wow firstSliderCard" id="secondNthCard">
+                    <div class="swiper-slide wow firstSliderCard">
                         <div class="firstGalleryImage">
-                            <img src="./images/firstGallery2.jpg" loading="lazy">
+                            <a href="./images/min/firstgallery2_min.jpg" class="popupTrig">
+                                <img src="./images/min/firstgallery2_min.jpg" loading="lazy">
+                            </a>
                             <div class="galleryTextBlock">
                                 <h3 class="tech_h3FontSize">Marble</h3>
                                 <p class="tech_parFontSize">Ante mus blandit sapien sociosqu</p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide wow firstSliderCard" id="thirdNthCard" >
+                    <div class="swiper-slide wow firstSliderCard">
                         <div class="firstGalleryImage">
-                            <img src="./images/min/firstgallery3_min.jpg">
+                            <a href="./images/min/firstgallery3_min.jpg" class="popupTrig">
+                                <img src="./images/min/firstgallery3_min.jpg" loading="lazy">
+                            </a>
                             <div class="galleryTextBlock">
                                 <h3 class="tech_h3FontSize">Outdoor Flooring</h3>
                                 <p class="tech_parFontSize">Ante mus blandit sapien sociosqu per consequat ad.</p>
                             </div>
                         </div>
                         <div class="firstGalleryImage">
-                            <img src="./images/min/firstgallery4_min.jpg" loading="lazy">
+                            <a href="./images/min/firstgallery4_min.jpg" class="popupTrig">
+                                <img src="./images/min/firstgallery4_min.jpg" loading="lazy">
+                            </a>
                             <div class="galleryTextBlock">
                                 <h3 class="tech_h3FontSize">Kitchen Interior</h3>
                                 <p class="tech_parFontSize">Ante mus blandit sapien sociosqu per consequat ad.</p>
@@ -121,7 +138,7 @@
     </section>
     <section class="third">
         <div class="contentBorder thirdContent">
-            <div class="thirdContent__content">
+            <div class="thirdContentWrapper">
                 <div class="tech_textBlock thirdTextBlock">
                     <h1 class="animate__animated wow animate__fadeInLeft">Creative Solutions <br> by Professional Designers</h1>
                     <p class="tech_parFontSize animate__animated wow animate__fadeInLeftBig">
@@ -133,22 +150,22 @@
                 </div>
                 <div class="thirdSlider swiper">
                     <div class="thirdSliderWrapper swiper-wrapper">
-                        <div class="thirdSliderSlide swiper-slide wow">
+                        <a class="thirdSliderSlide popupTrig swiper-slide wow" href="./images/min/thirdgallery1_min.jpg">
                             <img src="./images/min/thirdgallery1_min.jpg" loading="lazy">
-                        </div>
-                        <div class="thirdSliderSlide swiper-slide wow">
+                        </a>
+                        <a class="thirdSliderSlide popupTrig swiper-slide wow" href="./images/min/thirdgallery2_min.jpg">
                             <img src="./images/min/thirdgallery2_min.jpg" loading="lazy">
-                        </div>
-                        <div class="thirdSliderSlide swiper-slide wow">
+                        </a>
+                        <a class="thirdSliderSlide popupTrig swiper-slide wow" href="./images/min/thirdgallery3_min.jpg">
                             <img src="./images/min/thirdgallery3_min.jpg" loading="lazy">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="thirdButton">
                     <a href="javascript:void(0)" class="tech_ancButton tech_darkButton animate__animated wow animate__fadeInDown">READ MORE</a>
                 </div>
             </div>
-            <div class="thirdContent__video">
+            <div class="thirdContentVideo">
                 <div class="playerWrapper">
                     <span id="hoverLayer"></span>
                     <div class="playerWrapperTextBlock animate__animated wow animate__fadeInRight">
@@ -186,36 +203,36 @@
             <div class="fourthSlider swiper">
                 <div class="fourthSliderWrapper swiper-wrapper">
                     <div class="fourthSlide swiper-slide wow">
-                        <div class="fourthSlideImage">
+                        <a class="fourthSlideImage popupTrig" href="./images/min/fourthslide1_min.jpg">
                             <img src="./images/min/fourthslide1_min.jpg" class="swiper-lazy" loading="lazy">
-                        </div>
+                        </a>
                         <div class="fourthSlideTextBlock">
                             <h3 class="tech_h3FontSize">Kingdom Tower</h3>
                             <p>Marble Flooring</p>
                         </div>
                     </div>
                     <div class="fourthSlide swiper-slide wow">
-                        <div class="fourthSlideImage">
-                            <img src="./images/min/fourthslide2_min.jpg" loading="lazy">
-                        </div>
+                        <a class="fourthSlideImage popupTrig" href="./images/min/fourthslide2_min.jpg">
+                            <img src="./images/min/fourthslide2_min.jpg" class="swiper-lazy" loading="lazy">
+                        </a>
                         <div class="fourthSlideTextBlock">
                             <h3 class="tech_h3FontSize">Dubai Mall</h3>
                             <p>Wood Flooring</p>
                         </div>
                     </div>
                     <div class="fourthSlide swiper-slide wow">
-                        <div class="fourthSlideImage">
+                        <a class="fourthSlideImage popupTrig" href="./images/min/fourthslide3_min.jpg">
                             <img src="./images/min/fourthslide3_min.jpg" loading="lazy">
-                        </div>
+                        </a>
                         <div class="fourthSlideTextBlock">
                             <h3 class="tech_h3FontSize">King Road Offices</h3>
                             <p>Outdoor Flooring</p>
                         </div>
                     </div>
                     <div class="fourthSlide swiper-slide wow">
-                        <div class="fourthSlideImage">
+                        <a class="fourthSlideImage popupTrig" href="./images/min/fourthslide4_min.jpg">
                             <img src="./images/min/fourthslide4_min.jpg" loading="lazy">
-                        </div>
+                        </a>
                         <div class="fourthSlideTextBlock">
                             <h3 class="tech_h3FontSize">Beach Tower Alupang</h3>
                             <p>Wood Flooring</p>
