@@ -13,11 +13,13 @@ $(function () {
         type: "image",
         preloader: false,
         closeOnContentClick: true,
+        fixedContentPos: true,
+        overflowY: "hidden",
         image: {
             verticalFit: false,
             hasOrientation: true
         },
-        mainClass: 'mfp-with-zoom',
+        mainClass: "mfp-with-zoom",
         zoom: {
             enabled: true,
             duration: 300,
