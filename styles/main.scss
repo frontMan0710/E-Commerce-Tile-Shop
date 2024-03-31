@@ -896,30 +896,33 @@
       }
     }
     .first {
-      max-height: 663px;
-      height: 154.9vw;
+      max-height: 653px;
+      height: fit-content;
       .firstContent {
         .firstSlider {
-          width: 100%;
           max-height: 445px;
-          height: 103.97vw;
+          height: fit-content;
+          width: 100%;
+          padding: 0 0 40px 0;
           margin-top: 20px;
           .sliderWrapper {
             .firstSliderCard {
               max-height: 405px;
-              height: 100%;
+              height: 94.62vw;
+              width: 100%;
+              min-width: 0;
               .firstGalleryImage {
                 position: relative;
                 img {
                   max-width: 100%;
-                  max-height: 350px;
+                  max-height: 100%;
                 }
                 .galleryTextBlock {
                   max-width: 361px;
                   max-height: 93px;
                   width: 84.34vw;
                   height: 21.72vw;
-                  bottom: 0;
+                  bottom: -10px;
                   padding: 4.67vw 11.68vw 3.5vw 11.68vw;
                   transform: translate(-50%, 5vw);
                   h3 {
@@ -934,7 +937,7 @@
             }
             .sliderColumnCard {
               .firstGalleryImage {
-                max-width: 80%;
+                max-width: 75%;
               }
             }
           }
@@ -1017,7 +1020,7 @@
           max-height: 481px;
           height: 112.38vw;
           width: 100%;
-          padding: 20px 0 20px;
+          margin-top: 20px;
           .fourthSliderWrapper {
             .fourthSlide {
               display: flex;
