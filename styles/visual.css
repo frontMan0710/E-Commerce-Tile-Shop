@@ -76,14 +76,17 @@ footer {
 .swiper-button-next {
     background-color: var(--color-white);
     color: var(--color-black) !important;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 4px;
+    width: 37px !important;
+    height: 37px !important;
 }
 .swiper-button-prev:focus,
 .swiper-button-next:focus {
     background-color: var(--color-black-mixin);
     color: var(--color-white) !important;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 20px !important;
 }
 .sliderColumnCard {
     display: flex;
@@ -240,6 +243,16 @@ header #menuContent .searchForm input {
     position: absolute;
     z-index: 3;
     left: 50%;
+}
+.footerColList li a {
+    color: var(--color-light-grey);
+    width: fit-content;
+}
+.footerColList li a:hover {
+    color: var(--color-white);
+}
+.footerColList li a.changed {
+    color: var(--color-white);
 }
 hr {
     background-color: var(--color-grey);

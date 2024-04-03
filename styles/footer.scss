@@ -18,7 +18,7 @@
           flex-direction: column;
         }
         .footerCopyright {
-          font-size: 0.46vw;
+          font-size: 9px;
         }
       }
       .footerColumn:nth-of-type(2) {
@@ -30,8 +30,8 @@
           .footerContactList {
             max-height: 18px;
             max-width: 74px;
-            width: 3.85vw;
-            height: 0.93vw;
+            width: 100%;
+            height: 17px;
           }
         }
       }
@@ -49,16 +49,6 @@
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            li {
-              color: var(--color-light-grey);
-              width: fit-content;
-              &:hover {
-                color: var(--color-white);
-              }
-            }
-            li.changed {
-              color: var(--color-white);
-            }
           }
         }
       }
@@ -224,7 +214,7 @@
         .mobileFooterCopyright {
           color: var(--color-grey);
           text-align: center;
-          font-size: 9px;
+          font-size: 10px;
           width: 100%;
         }
       }
@@ -242,7 +232,10 @@
           transform: rotate(180deg);
         }
         ul, p {
-          margin-top: 10px;
+          margin-top: 14px;
+        }
+        .footerColList {
+          gap: 4px;
         }
       }
       .notCollapsible {

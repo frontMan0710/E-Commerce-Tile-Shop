@@ -16,6 +16,10 @@ $(function () {
                 429: {
                     slidesPerView: 3,
                 }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             }
         })
         new Swiper(".firstSlider", {
@@ -32,7 +36,7 @@ $(function () {
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-            },
+            }
         })
     }
 })

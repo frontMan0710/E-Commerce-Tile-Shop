@@ -167,6 +167,7 @@
                 height: 100%;
                 img {
                   max-height: 100%;
+                  max-width: 100%;
                 }
               }
             }
@@ -178,11 +179,12 @@
         .thirdContentVideo {
           max-width: 454px;
           width: 23.64vw;
+          max-height: 100%;
           height: 100%;
           .playerWrapper {
             background-image: url("../images/min/playerpreview_min.jpg");
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             position: relative;
             cursor: pointer;
             width: 100%;
@@ -273,7 +275,7 @@
     }
     .fourth {
       max-height: 803px;
-      height: fit-content;
+      height: 41.82vw;
       .fourthContent {
         .fourthSlider {
           max-height: 502px;
@@ -289,6 +291,8 @@
               width: 17.34vw;
               height: 21.97vw;
               .fourthSlideImage {
+                max-height: 333px;
+                height: 17.34vw;
                 img {
                   max-height: 100%;
                   max-width: 100%;
@@ -300,8 +304,8 @@
                 flex-direction: column;
                 text-align: center;
                 gap: 3px;
-                max-height: 91px;
-                height: 4.73vw;
+                max-height: 89px;
+                height: 4.63vw;
                 h3 {
                   font-size: 1.35vw;
                 }
@@ -324,6 +328,7 @@
           flex-wrap: wrap;
           max-height: 1100px;
           height: 57.29vw;
+          margin-top: 20px;
           padding: 20px 0 20px 0;
           .fifthCatalogueCard {
             display: flex;
@@ -333,6 +338,8 @@
             width: 17.34vw;
             height: 27.6vw;
             .fifthCatalogueImage {
+              max-height: 333px;
+              height: 17.34vw;
               img {
                 max-height: 100%;
                 max-width: 100%;
@@ -340,7 +347,7 @@
               }
             }
             &:hover {
-              transform: scale(1.1);
+              transform: scale(1.05);
             }
             .fifthCatalogueTextBlock {
               display: flex;
@@ -557,13 +564,13 @@
           padding: 20px 0 20px;
           .fourthSliderWrapper {
             .fourthSlide {
-              display: flex;
-              align-items: center;
-              flex-direction: column;
-              max-width: 100%;
-              max-height: 100%;
-              height: 100%;
+              max-width: 333px;
+              max-height: 422px;
+              width: 32.55vw;
+              height: 41.25vw;
               .fourthSlideImage {
+                max-height: 333px;
+                height: 32.55vw;
                 img {
                   max-height: 100%;
                   max-width: 100%;
@@ -600,6 +607,8 @@
           gap: 1.95vw;
           max-height: fit-content;
           height: fit-content;
+          margin-top: 20px;
+          padding: 20px 0 20px 0;
           .fifthCatalogueCard {
             display: flex;
             flex-direction: column;
@@ -611,6 +620,10 @@
               text-align: center;
             }
             .fifthCatalogueImage {
+              max-height: 333px;
+              max-width: 333px;
+              width: 32.55vw;
+              height: 32.55vw;
               img {
                 max-height: 100%;
                 max-width: 100%;
@@ -693,13 +706,13 @@
       }
     }
     .first {
-      max-height: 768px;
-      height: 100.1vw;
+      max-height: 820px;
+      height: 106.9vw;
       .firstContent {
         .firstSlider {
           width: 100%;
-          max-height: 620px;
-          height: 80.83vw;
+          max-height: 618px;
+          height: 80.57vw;
           margin-top: 20px;
           .sliderWrapper {
             .firstSliderCard {
@@ -717,7 +730,7 @@
                   max-height: 114px;
                   height: 11.14vw;
                   width: 100%;
-                  bottom: -20px;
+                  bottom: 0;
                   transform: translateX(-50%);
                   h3 {
                     font-weight: normal;
@@ -731,9 +744,31 @@
                 }
               }
             }
+            .sliderRowCard {
+              .firstGalleryImage {
+                max-height: 618px;
+                height: 80.57vw;
+              }
+            }
+            .sliderRowCard:nth-of-type(2) {
+              .firstGalleryImage {
+                max-width: 575px;
+                width: 74.96vw;
+                min-width: 41.92vw;
+              }
+            }
+            .sliderRowCard:nth-of-type(3) {
+              .firstGalleryImage {
+                max-width: 339px;
+                width: 44.19vw;
+              }
+            }
             .sliderColumnCard {
               .firstGalleryImage {
-                width: 70%;
+                max-width: 454px;
+                max-height: 274px;
+                width: 59.19vw;
+                height: 35.72vw;
               }
             }
           }
@@ -776,13 +811,13 @@
           .thirdSlider {
             max-height: 325px;
             width: 100%;
-            height: fit-content;
+            height: 34.81vw;
             margin-top: 20px;
             .thirdSliderWrapper {
               .thirdSliderSlide {
                 max-width: 100%;
                 max-height: 100%;
-                height: 100%;
+                width: 27.5vw;
                 img {
                   max-width: 100%;
                   max-height: 100%;
@@ -807,19 +842,22 @@
         justify-content: space-between;
         flex-direction: column;
         .fourthSlider {
-          max-height: 333px;
-          height: 43.41vw;
+          max-height: 301px;
+          height: 39.24vw;
           width: 100%;
           margin-top: 20px;
           .fourthSliderWrapper {
             .fourthSlide {
-              display: flex;
-              align-items: center;
-              flex-direction: column;
-              max-width: 100%;
+              //211px
+              max-width: 333px;
               max-height: 100%;
-              height: 100%;
+              width: 27.5vw;
+              height: 55vw;
               .fourthSlideImage {
+                //211px
+                max-height: 333px;
+                height: 27.5vw;
+                width: 100%;
                 img {
                   max-height: 100%;
                   max-width: 100%;
@@ -935,9 +973,20 @@
                 }
               }
             }
+            .sliderRowCard:nth-of-type(3) {
+              .firstGalleryImage {
+                max-width: 339px;
+                width: 51.86vw;
+              }
+            }
             .sliderColumnCard {
               .firstGalleryImage {
-                max-width: 75%;
+                max-width: 454px;
+                max-height: 274px;
+                width: 73.13vw;
+                height: 44.15vw;
+                //width: 64.25vw;
+                //height: 38.78vw;
               }
             }
           }
@@ -963,8 +1012,8 @@
     }
     .third {
       max-height: 653px;
-      height: 152.57vw;
-      padding-top: 40px;
+      height: fit-content;
+      padding: 40px 0 40px 0;
       .thirdContent {
         display: flex;
         .thirdContentWrapper {
@@ -980,7 +1029,8 @@
           }
           .thirdTextBlock {
             text-align: center;
-            height: 70.79vw;
+            height: fit-content;
+            gap: 20px;
           }
           .thirdSlider {
             width: 100%;
@@ -992,7 +1042,7 @@
                 justify-content: center;
                 max-width: 100%;
                 max-height: 100%;
-                height: 100%;
+                width: 60.04vw;
                 img {
                   max-width: 100%;
                   max-height: 100%;
@@ -1011,14 +1061,13 @@
     }
     .fourth {
       max-height: 757px;
-      height: 177.28vw;
+      height: fit-content;
       .fourthContent {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         .fourthSlider {
           max-height: 481px;
-          height: 112.38vw;
           width: 100%;
           margin-top: 20px;
           .fourthSliderWrapper {
@@ -1026,10 +1075,12 @@
               display: flex;
               align-items: center;
               flex-direction: column;
-              max-width: 100%;
-              max-height: 100%;
-              height: 100%;
+              max-height: 464px;
               .fourthSlideImage {
+                //333px
+                max-height: 333px;
+                height: 77.33vw;
+                width: 77.8vw;
                 img {
                   max-height: 100%;
                   max-width: 100%;
@@ -1060,6 +1111,10 @@
       max-height: 907px;
       height: 211.91vw;
       .sixthContent {
+        background-image: url("../images/hexagons.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: bottom left;
         display: flex;
         align-items: flex-start;
         .sixthTextCard {
