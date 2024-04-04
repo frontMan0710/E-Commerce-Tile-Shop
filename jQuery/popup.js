@@ -7,7 +7,8 @@ $(function () {
         },
         preloader: false,
         closeBtnInside: false,
-        overflow: false,
+        fixedContentPos: true,
+        overflowY: "hidden",
     })
     $(".popupTrig").magnificPopup({
         type: "image",
@@ -28,5 +29,17 @@ $(function () {
         gallery: {
             enabled: true
         },
+    })
+    $('#callbackModal').magnificPopup({
+        items: {
+            src: '#callbackModalContainer',
+            type: 'inline',
+            modal: true
+        },
+        focus: '#phoneNumber',
+        preloader: false,
+        closeBtnInside: false,
+        fixedContentPos: true,
+        overflowY: "hidden",
     })
 })

@@ -42,7 +42,20 @@
                 <li>CONTACT</li>
             </ul>
             <div class="profileAction">
-                <a href="javascript:void(0)" class="tech_ancButton tech_darkButton" id="callback">CALLBACK</a>
+                <a href="javascript:void(0)" class="tech_ancButton tech_darkButton" id="callbackModal">CALLBACK</a>
+            </div>
+            <div id="callbackModalContainer" class="mfp-hide">
+                <div class="modalElements">
+                    <div class="logo">
+                        <img src="./images/min/logo.png" width="162" height="57" loading="lazy">
+                    </div>
+                    <form action="" id="callbackForm">
+                        <input class="tech_parFontSize" name="userPhone" type="number" id="phoneNumber" placeholder="Phone number" maxlength="15">
+                        <input class="tech_parFontSize" name="gmail" type="email" id="email" placeholder="Email" maxlength="50">
+                        <input class="tech_parFontSize" name="userName" type="text" id="name" placeholder="Your name" minlength="1" maxlength="64">
+                        <button type="submit" class="tech_ancButton tech_darkButton">SUBMIT</button>
+                    </form>
+                </div>
             </div>
         </div>
     </nav>
