@@ -18,6 +18,7 @@ $(function() {
         $(".galleryTextBlock").css({"bottom":"-20px"})
         $(".playerWrapperTextBlock .textContent span, .fifthCatalogueTextBlock p").css({"font-size":"18px"})
         $(".navigation li, .galleryTextBlock p, .fourthSlideTextBlock p").css({"font-size":"16px"})
+        $(".swiper-button-prev, .swiper-button-next").css({"display":"none"})
         $(".footerCopyright p").css({"font-size":"9px"})
         $(".tech_parFourteen").css({"font-size":"14px"})
         $(".tech_parFontSize").css({"font-size":"20px"})
@@ -29,6 +30,7 @@ $(function() {
         $("main .start").css({"height":"27vw", "background-size":"cover"})
         $("#videoPlayerModal iframe").css({"max-width":"1120px",
             "max-height":"630px", "width":"58.33vw", "height":"32.81vw"})
+        $(".swiper-button-prev, .swiper-button-next").css({"display":"none"})
     }
     if($(window).width() <= 1023 && $(window).width() >= 768) {
         var $headerHeight = $("header").height()
